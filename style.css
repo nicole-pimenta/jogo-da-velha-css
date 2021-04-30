@@ -2,7 +2,6 @@ html, h1,h2,div,ul,body,div,figure{
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 
 body{
@@ -11,93 +10,108 @@ body{
     background-image: linear-gradient(#FC5C7D,#6A82FB);
 } 
 
+header{
+    height: 8vh;
+}
 h1{
     font-family: 'Press Start 2P', cursive;
     color: #fff;
-    margin-top: 15px ;
+    height: 90%;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.3rem;
+    margin: 1.2em auto;
 }  
 
 div#div-menu{
-    height: 40vh;
-    width: 90vw;
+    height: 35vh;
+    width: 80vw;
     margin: 0 auto;
     display: flex; 
+    margin-bottom: 5px;
+    
 } 
 
 figure{
-    width: 30%;
-    margin: 10px auto;
+    width: 30vw;
+    margin: 10px ;
 }
 
 img{
-  height: 200px;
-
+    height:95%;
+    margin:5px;
 } 
 
-div.container{ 
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    margin-top:5px;
-}
-
-div.container-game{
-    width: 55%; 
+div.container-menu{
+    width: 40vw; 
+    margin:10px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 
 
-input[type=button]{
-    width: 120px;
-    height: 50px;
-    background-color: wheat;
+button{
+    width: 80%;
+    height: 20%; 
+    background-color:#fff;
+    color:rgb(59, 56, 56);
+    font-size: 0.8rem;
     margin:15px;
+    border: none;
     border-radius: 5px;
+    box-shadow: 4px 4px 0px #000000;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    color:rgb(59, 56, 56);
-
-}
-
-input[type=button]:hover{
     cursor: pointer;
-    background-color: rgba(0, 128, 128, 0.74);
+    transition: transform 200ms ease-in-out;
 }
 
+div.container{ 
+    width: 80vw;
+    height: 300px;
+    margin: 15px auto;
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 div.position{
-height: 90px;
-width: 90px;
-background-color:transparent;
-border: 1px solid white;
-
-} 
-
-div.position:hover{
-    background-color:white;
-    border:white solid 1px;
+    height: 6rem;
+    width:32%;
+    background-color:transparent;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px 1px grey;
     cursor: pointer;
+ } 
+ 
+ div.position:hover{
+     background-color:white;
+     border:#fff solid 1px;
+ } 
 
-} 
 
-@media (min-width:400px){ 
-    h1{
-        font-size: 21px;
-    }  
-    div.position{
-        height: 110px;
-        width: 110px;
-        }  
 
-        img{
-            margin-top: 10px;
-            height:260px;
-          
-          }  
-          div.container{ 
-            margin-top:25px;
-        }
+button:hover{ 
+   transform: scale(1.1);
+   background-color: #6a82fbea;
+   color: white;
 }
+
+
+@media(min-width:760px){ 
+    h1{
+        font-size: 1.8rem;
+    } 
+
+    img{
+        height: 100%;
+    } 
+
+    div.position{
+        height: 9.5rem;
+    }
+    
+    div#div-menu{
+        margin-bottom: 40px;
+    }
+}
+    
