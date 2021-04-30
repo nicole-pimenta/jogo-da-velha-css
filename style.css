@@ -2,6 +2,7 @@ html, h1,h2,div,ul,body,div,figure{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -51,7 +52,7 @@ div.container-menu{
 } 
 
 button{
-    width: 80%;
+    width: 70%;
     height: 20%; 
     background-color:#fff;
     color:rgb(59, 56, 56);
@@ -97,7 +98,7 @@ button:hover{
 }
 
 
-@media(min-width:760px){ 
+@media(min-width:760px) and (max-width:1024px){ 
     h1{
         font-size: 1.8rem;
     } 
@@ -112,6 +113,27 @@ button:hover{
     
     div#div-menu{
         margin-bottom: 40px;
+    }
+} 
+
+@media(min-width:1025px){
+
+    img{
+        height:100%;
+        margin-left:20vw ;
+    } 
+
+    button{
+    font-size: 1.2rem;
+    }
+    
+    div.container{
+        width: 50vw;
+       margin: 30px auto;
+    } 
+
+    div.position{
+        height: 6.3rem;
     }
 }
     
